@@ -23,7 +23,12 @@
 
     header { padding: 1.25rem 0; }
     header .container { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-weight: 800; font-size: 1.5rem; color: var(--verde); letter-spacing: .05em; }
+    .logo img { height: 44px; display: block; }
+    .logo-hero { height: 110px; margin: 0 auto 1.5rem; display: block; }
+    .logo-secao { height: 34px; margin: 0 auto 1rem; display: block; opacity: .85; }
+    .logo-preco { height: 50px; margin: 0 auto 1rem; display: block; }
+    .logo-footer { height: 48px; margin: 0 auto .75rem; display: block; }
+    .logo-modal { height: 46px; margin: 0 auto 1rem; display: block; }
     .btn { display: inline-block; background: var(--verde); color: #fff; text-decoration: none; font-weight: 600;
            padding: .9rem 1.6rem; border-radius: 999px; transition: background .2s, transform .2s; border: none; cursor: pointer; font-size: 1rem; }
     .btn:hover { background: var(--verde-escuro); transform: translateY(-2px); }
@@ -80,7 +85,7 @@
 
   <header>
     <div class="container">
-      <div class="logo">VOLL</div>
+      <div class="logo"><img src="logo.png" alt="VOLL Pilates" /></div>
       <a href="#preco" class="btn btn-sm">Quero me inscrever</a>
     </div>
   </header>
@@ -88,6 +93,7 @@
   <main>
     <section class="hero">
       <div class="container">
+        <img src="logo.png" alt="VOLL Pilates" class="logo-hero" />
         <span class="tag">Turma de demonstração · Vagas limitadas</span>
         <h1>Formação <span>Pilates Completo</span>:<br />do zero ao seu primeiro aluno</h1>
         <p>Aprenda o método, a anatomia e a prática de estúdio com quem mais forma instrutores de Pilates no Brasil.</p>
@@ -97,6 +103,7 @@
 
     <section>
       <div class="container">
+        <img src="logo.png" alt="" class="logo-secao" />
         <h2>Por que fazer essa formação?</h2>
         <div class="grid">
           <div class="card"><div class="icone">🧘</div><h3>Método completo</h3><p>Solo, aparelhos e acessórios num só curso, do básico ao avançado.</p></div>
@@ -109,6 +116,7 @@
 
     <section class="modulos">
       <div class="container">
+        <img src="logo.png" alt="" class="logo-secao" />
         <h2>O que você vai aprender</h2>
         <ol>
           <li>Fundamentos e princípios do Pilates</li>
@@ -125,6 +133,7 @@
       <div class="container">
         <h2>Investimento</h2>
         <div class="preco-box">
+          <img src="logo.png" alt="VOLL Pilates" class="logo-preco" />
           <div class="de">De R$ 5.500</div>
           <div class="valor">R$ 4.000</div>
           <div class="parcela">ou 18x de R$ 222,22 sem juros</div>
@@ -153,12 +162,14 @@
 
   <footer>
     <div class="container">
+      <img src="logo-branco.png" alt="VOLL Pilates" class="logo-footer" />
       VOLL · Página de demonstração pública — nenhum dado é coletado e nenhuma compra é realizada.
     </div>
   </footer>
 
   <div class="modal" id="modal" onclick="if (event.target === this) fecharModal()">
     <div class="modal-box">
+      <img src="logo.png" alt="VOLL Pilates" class="logo-modal" />
       <h3>🎉 Isso é só uma demonstração!</h3>
       <p>Este curso é fictício. Em um site real, aqui você seria levado ao checkout.</p>
       <button class="btn" onclick="fecharModal()">Entendi</button>
